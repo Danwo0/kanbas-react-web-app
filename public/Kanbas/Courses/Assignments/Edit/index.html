@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Assignment</title>
+</head>
+<body>
+  <form id="assignment-edit-mode">
+    <select id="assignments-edit-mode-dropdown">
+      <option value="SPEED">Speed Grader</option>
+    </select>
+  </form>
+  <hr>
+  <form id="assignment-description">
+    <lable for="assignment-name">
+      <h2>Assignment Name</h2>
+    </lable>
+    <input id="assignment-name" type="text" placeholder="Assignment Name" /><br /><br />
+    <textarea placeholder="Assignment Description">This is the assignment description</textarea>
+  </form>
+  <br />
+  <form id="assignment-details">
+    <lable for="assignment-points">Points</lable><br />
+    <input id="assignment-points" type="text" placeholder="Points" /><br /><br />
+
+    <lable for="assignment-group">Assignment Group</lable><br />
+    <select id="assignment-group">
+      <option value="ASSIGNMENTS">ASSIGNMENTS</option>
+      <option value="QUIZZES">QUIZZES</option>
+      <option value="EXAMS">EXAMS</option>
+      <option value="PROJECT">PROJECT</option>
+    </select><br /><br />
+
+    <lable for="assignment-display">Display Grade as</lable><br />
+    <select id="assignment-display">
+      <option value="Percentage">Percentage</option>
+    </select><br /><br />
+
+    <lable for="assignment-submission-type">Submission Type</lable><br />
+    <select id="assignment-submission-type">
+      <option value="ONLINE">Online</option>
+    </select><br /><br />
+
+    <lable for="assignment-online-entry-chkboxes">Online Entry Options</lable><br />
+    <input
+      type="checkbox"
+      value="TEXT"
+      name="text-entry"
+      id="chkbox-text"
+    />
+    <lable for="chkbox-text">Text Entry</lable><br />
+    <input
+      type="checkbox"
+      value="URL"
+      name="website-url"
+      id="chkbox-url"
+    />
+    <lable for="chkbox-url">Website URL</lable><br />
+    <input
+      type="checkbox"
+      value="MEDIA"
+      name="media-recording"
+      id="chkbox-media"
+    />
+    <lable for="chkbox-media">Media Recordings</lable><br />
+    <input
+      type="checkbox"
+      value="ANNOTATION"
+      name="student-annotation"
+      id="chkbox-annotation"
+    />
+    <lable for="chkbox-annotation">Student Annotation</lable><br />
+    <input
+      type="checkbox"
+      value="FILE"
+      name="file-uploads"
+      id="chkbox-file"
+    />
+    <lable for="chkbox-file">File Uploads</lable><br />
+  </form>
+  <br />
+  <form id="assignment-dates">
+    <lable for="assignment-assinged">Assign<br />Assign to</lable><br />
+    <input id="assignment-assinged" type="text" placeholder="Everyone" /><br /><br />
+
+    <lable for="assignment-date-due">Due</lable><br />
+    <input id="assignment-date-due" type="date" /><br /><br />
+
+    <lable for="assignment-date-from">Available From</lable><br />
+    <input id="assignment-date-from" type="date" /><br /><br />
+
+    <lable for="assignment-date-until">Until</lable><br />
+    <input id="assignment-date-until" type="date" /><br /><br />
+  </form>
+  <form id="assignment-submit" action="/Kanbas/Courses/Assignments/screen.html">
+    <button type="submit">Cancel</button>
+    <button type="submit">Save</button>
+  </form>
+</body>
+</html>
