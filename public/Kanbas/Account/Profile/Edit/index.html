@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Profile</title>
+</head>
+<body>
+  <h2>Junwoo Lee</h2>
+  <form id="profile-basic-info-edit">
+    <lable for="profile-edit-name">Name:*</lable>
+    <input id="profile-edit-name" type="text" value="Junwoo Lee"/>
+
+    <lable for="profile-edit-pronoun">Pronouns: </lable>
+    <select id="profile-edit-pronoun">
+      <option value="NONE">None</option>
+    </select><br />
+
+    <lable for="profile-edit-title">Title:</lable>
+    <input id="profile-edit-title" type="text" />
+  </form>
+
+  <h3>Contact</h3>
+  <p>
+    No registered services, you can add some on the
+    <a href="#">settings</a> page
+  </p>
+
+  <h3>Biography</h3>
+  <form id="profile-bio-edit">
+    <lable for="profile-edit-bio">Student, Software Engineer, Backend Engineering</lable><br />
+    <textarea id="profile-edit-bio">Student, Software Engineer, Backend Engineering</textarea>
+  </form>
+
+  <h3>Links</h3>
+  <ul>
+    <li><a href="#">YouTube</a>(Links to an external site.)</li>
+  </ul>
+
+  <form id="profile-edit-link">
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th></th>
+          <th>URL</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <input id="profile-edit-link-title" type="text" />
+          </td>
+          <td>→</td>
+          <td>
+            <input id="profile-edit-link-url" type="text" />
+          </td>
+          <td><a href="#">Remove</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button type="button">Add another link</button><br />
+  </form>
+
+  <button type="button">Cancel</button>
+  <button type="button" onclick="window.location.href='/Kanbas/Account/Profile/screen.html'">
+    Save Profile
+  </button><br />
+  <button type="button" onclick="window.location.href='/Kanbas/Account/Profile/Edit/screen.html'">
+    Edit Profile
+  </button>
+  <button type="button" onclick="window.location.href='/Kanbas/Account/Profile/screen.html'">
+    Cancel Editing Profile
+  </button>
+</body>
+</html>
