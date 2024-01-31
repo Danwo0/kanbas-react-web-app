@@ -30,3 +30,8 @@
   font-size: 2em;
   margin-bottom: 5px;
 }
+
+.wd-kanbas-navigation img {
+  width: 60px;
+  height: 60px;
+}
