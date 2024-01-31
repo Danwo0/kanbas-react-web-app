@@ -1,0 +1,32 @@
+.wd-courses-navigation-bar {
+  background-color: white;
+  width: 150px;
+  height: 100%;
+}
+
+.wd-courses-navigation {
+    background-color: white;
+    list-style: none;
+    padding: 0px;
+    width: 150;
+    margin: 0px;
+    margin-left: 20px;
+    position: fixed;
+}
+
+.wd-courses-navigation li {
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.wd-courses-navigation li.wd-active {
+  border-left: 2px solid black;
+}
+.wd-courses-navigation li.wd-active a {
+  color: black;
+}
+.wd-courses-navigation a {
+  color: red;
+  text-decoration: none;
+}
+  
