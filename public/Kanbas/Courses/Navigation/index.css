@@ -1,7 +1,6 @@
 .wd-courses-navigation-bar {
   background-color: white;
   width: 150px;
-  height: 100%;
 }
 
 .wd-courses-navigation {
@@ -11,7 +10,6 @@
     width: 150;
     margin: 0px;
     margin-left: 20px;
-    position: fixed;
 }
 
 .wd-courses-navigation-sm {
