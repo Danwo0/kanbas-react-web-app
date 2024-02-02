@@ -36,13 +36,14 @@
 }
 
 .wd-modules-main {
-    padding-right: 10px;
-    flex-grow: 1;
+    padding-top: 36px;
+    padding-left: 48px;
+    padding-right: 48px;
 }
 
 .wd-modules-main > .wrapper {
     clear: both; 
-    padding-top: 2px;
+    padding-top: 36px;
 }
 
 .wd-modules-main-header {
@@ -51,10 +52,6 @@
 
 .wd-modules-main-header > .module-dropdown {
     width: auto;
-}
-
-.wd-modules-main-body > hr{
-    margin-top: 5px;
 }
 
 .wd-modules-sidebar-button {
