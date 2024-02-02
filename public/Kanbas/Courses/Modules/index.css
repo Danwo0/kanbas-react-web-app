@@ -54,6 +54,10 @@
     width: auto;
 }
 
+.wd-modules-sidebar {
+    padding-right: 24px;
+}
+
 .wd-modules-sidebar-button {
     width: 240px;
     text-align: left;
@@ -68,6 +72,7 @@
     font-size: 1.5rem;
     margin-bottom: 4px;
 }
+
 .wd-modules-sidebar hr {
     margin-top: 4px;
     margin-bottom: 4px;

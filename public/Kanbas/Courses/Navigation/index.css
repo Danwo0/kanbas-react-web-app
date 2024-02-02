@@ -14,20 +14,61 @@
     position: fixed;
 }
 
+.wd-courses-navigation-sm {
+  background-color: white;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
 .wd-courses-navigation li {
   padding-left: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
 }
+
+.wd-courses-navigation-sm li {
+  padding-left: 0px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
 .wd-courses-navigation li.wd-active {
   border-left: 2px solid black;
 }
+
+.wd-courses-navigation-sm li.wd-active {
+  font-weight: bold;
+}
+
 .wd-courses-navigation li.wd-active a {
   color: black;
 }
+
 .wd-courses-navigation a {
   color: red;
   text-decoration: none;
+}
+
+.wd-courses-navigation-sm a {
+  color: red;
+  text-decoration: none;
+}
+
+.wd-courses-navigation-sm a .wd-courses-image-wrapper {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 2px;
+  margin-right: 4px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wd-courses-navigation-sm a .wd-courses-image-wrapper i {
+  color: red;
+  display: block;
+  margin: auto;
 }
 
 .wd-courses-navigation-navbar {
@@ -54,16 +95,16 @@
 }
 
 .wd-courses-navigation-navbar > .navbar > i {
-  padding-top: 8px;
+  padding-top: 4px;
   padding-left: 10px;
   font-size: 10px;
   color: gray;
 }
 
 .wd-courses-navigation-navbar p {
-  padding-top: 4px;
   padding-left: 10px;
   margin: 0px;
+  font-size: 1rem;
   color: black;
 }
 
@@ -76,4 +117,8 @@
   -webkit-transition: none;
   transition: none;
   display: none;
+}
+
+.d-md-block:not(.show) {
+  display: none !important;
 }

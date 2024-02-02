@@ -1,75 +1,178 @@
 <html>
   <head>
     <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="/Kanbas/styles.css" />
     <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Modules/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Dashboard/index.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-  </head>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+      </head>
   <body>
-    <div class="d-flex">
-      <div>
-        <div class="wd-kanbas-navigation-bar">
-          <ul class="wd-kanbas-navigation">
-            <li><a href="http://northeastern.edu"><img src="/Image/logo.png" class="wd-kanbas-navigation-logo"></a></li>
-            <li>
-              <a href="/Kanbas/Account/Profile/screen.html">
-                <i class="fa fa-user" style="color: white"></i><br />
-                Account
-              </a>
-            </li>
-            <li class="wd-active">
-              <a href="/Kanbas/Dashboard/screen.html">
-                <i class="fa fa-gauge-high"></i><br />
-                Dashboard
-              </a>
-            </li>
-            <li>
-              <a href="/Kanbas/Courses/Home/screen.html">
-                <i class="fa fa-book"></i><br />
-                Courses
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa fa-calendar"></i><br />
-                Calendar
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa fa-inbox"></i><br />
-                Inbox
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa fa-clock"></i><br />
-                History
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa fa-tv"></i><br />
-                Studio
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa fa-c"></i><br />
-                Commons
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa fa-circle-question"></i><br />
-                Help
-              </a>
-            </li>
-          </ul>
-        </div>
+    <div class="max-height d-flex">
+      <div class="wd-kanbas-navigation-bar d-none d-md-block show">
+        <ul class="wd-kanbas-navigation">
+          <li><a href="http://northeastern.edu"><img src="/Image/logo.png" class="wd-kanbas-navigation-logo"></a></li>
+          <li>
+            <a href="/Kanbas/Account/Profile/screen.html">
+              <i class="fa fa-user" style="color: white"></i><br />
+              Account
+            </a>
+          </li>
+          <li>
+            <a href="/Kanbas/Dashboard/screen.html">
+              <i class="fa fa-gauge-high"></i><br />
+              Dashboard
+            </a>
+          </li>
+          <li class="wd-active">
+            <a href="/Kanbas/Courses/Home/screen.html">
+              <i class="fa fa-book"></i><br />
+              Courses
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-calendar"></i><br />
+              Calendar
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-inbox"></i><br />
+              Inbox
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-clock"></i><br />
+              History
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-tv"></i><br />
+              Studio
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-c"></i><br />
+              Commons
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-circle-question"></i><br />
+              Help
+            </a>
+          </li>
+        </ul>
       </div>
-      <div>
-        <div class="p-4">
+      <div class="d-block flex-fill">
+        <div class="wd-navigation-navbar-sm pos-f-t d-flex d-md-none">
+          <nav class="navbar navbar-dark bg-dark flex-fill">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSmallLeft" aria-expanded="false" aria-controls="collapseSmallLeft">
+              <i class="fa fa-bars"></i>
+            </button>
+            <div class="d-block text-center">
+              <p>
+              Dashboard
+              </p>
+            </div>
+            <p></p>
+          </nav>
+        </div>
+        <div class="collapse d-md-none" id="collapseSmallLeft">
+          <div class="wd-kanbas-navigation-bar-sm">
+            <div class="wd-kanbas-navigation-sm-header d-flex">
+              <a href="/Kanbas/Navigation/mobile.html">
+                <img src="/Image/logo.png" class="wd-kanbas-navigation-logo">
+                K A N B A S
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSmallLeft" aria-expanded="false" aria-controls="collapseSmallLeft">
+                <i class="fa fa-x"></i>
+              </button>
+            </div>
+            <ul class="wd-kanbas-navigation-sm">
+              <li>
+                <a href="/Kanbas/Account/Profile/screen.html">
+                  <div class="wd-kanbas-image-wrapper">
+                    <i class="fa fa-user text-center" style="color: gray"></i>
+                  </div>
+                  Account
+                </a>
+              </li>
+              <li>
+                <a href="/Kanbas/Dashboard/screen.html">
+                  <div class="wd-kanbas-image-wrapper">
+                    <i class="fa fa-gauge-high"></i>
+                  </div>
+                  Dashboard
+                </a>
+              </li>
+              <li>
+                <a href="/Kanbas/Courses/Home/screen.html">
+                  <div class="wd-kanbas-image-wrapper">
+                    <i class="fa fa-book"></i>
+                  </div>
+                  Courses
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="wd-kanbas-image-wrapper">
+                    <i class="fa fa-calendar"></i>
+                  </div>
+                  Calendar
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="wd-kanbas-image-wrapper">
+                    <i class="fa fa-inbox"></i>
+                  </div>
+                  Inbox
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="wd-kanbas-image-wrapper">
+                    <i class="fa fa-clock"></i>
+                  </div>
+                  History
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="wd-kanbas-image-wrapper">
+                    <i class="fa fa-tv"></i>
+                  </div>
+                  Studio
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="wd-kanbas-image-wrapper">
+                    <i class="fa fa-c"></i>
+                  </div>
+                  Commons
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="wd-kanbas-image-wrapper">
+                    <i class="fa fa-circle-question"></i>
+                  </div>
+                  Help
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div> 
+        <div class="wd-kanbas-dashboard-main">
           <h1>Dashboard</h1> <hr />
           <h2>Published Courses (12)</h2> <hr />
           <div class="row">
@@ -81,8 +184,8 @@
                   <div class="card-body">
                     <a class="card-title" href="/Kanbas/Courses/Home/screen.html"
                         style="text-decoration: none; color: navy; font-weight: bold">
-                        CS1234 React JS</a>
-                    <p class="card-text">Full Stack software developer</p>
+                        CS4550 Web Dev</a>
+                    <p class="card-text">Web Development</p>
                     <a html="#" class="btn btn-primary"> Go </a>
                   </div>
                 </div>
@@ -94,8 +197,8 @@
                   <div class="card-body">
                     <a class="card-title" href="/Kanbas/Courses/Home/screen.html"
                         style="text-decoration: none; color: navy; font-weight: bold">
-                        CS1234 React JS</a>
-                    <p class="card-text">Full Stack software developer</p>
+                        CS4550 Web Dev</a>
+                    <p class="card-text">Web Development</p>
                     <a html="#" class="btn btn-primary"> Go </a>
                   </div>
                 </div>
@@ -106,8 +209,8 @@
                   <div class="card-body">
                     <a class="card-title" href="/Kanbas/Courses/Home/screen.html"
                         style="text-decoration: none; color: navy; font-weight: bold">
-                        CS1234 React JS</a>
-                    <p class="card-text">Full Stack software developer</p>
+                        CS4550 Web Dev</a>
+                    <p class="card-text">Web Development</p>
                     <a html="#" class="btn btn-primary"> Go </a>
                   </div>
                 </div>
@@ -118,8 +221,8 @@
                   <div class="card-body">
                     <a class="card-title" href="/Kanbas/Courses/Home/screen.html"
                         style="text-decoration: none; color: navy; font-weight: bold">
-                        CS1234 React JS</a>
-                    <p class="card-text">Full Stack software developer</p>
+                        CS4550 Web Dev</a>
+                    <p class="card-text">Web Development</p>
                     <a html="#" class="btn btn-primary"> Go </a>
                   </div>
                 </div>
@@ -130,8 +233,8 @@
                   <div class="card-body">
                     <a class="card-title" href="/Kanbas/Courses/Home/screen.html"
                         style="text-decoration: none; color: navy; font-weight: bold">
-                        CS1234 React JS</a>
-                    <p class="card-text">Full Stack software developer</p>
+                        CS4550 Web Dev</a>
+                    <p class="card-text">Web Development</p>
                     <a html="#" class="btn btn-primary"> Go </a>
                   </div>
                 </div>
@@ -142,8 +245,8 @@
                   <div class="card-body">
                     <a class="card-title" href="/Kanbas/Courses/Home/screen.html"
                         style="text-decoration: none; color: navy; font-weight: bold">
-                        CS1234 React JS</a>
-                    <p class="card-text">Full Stack software developer</p>
+                        CS4550 Web Dev</a>
+                    <p class="card-text">Web Development</p>
                     <a html="#" class="btn btn-primary"> Go </a>
                   </div>
                 </div>
@@ -154,8 +257,8 @@
                   <div class="card-body">
                     <a class="card-title" href="/Kanbas/Courses/Home/screen.html"
                         style="text-decoration: none; color: navy; font-weight: bold">
-                        CS1234 React JS</a>
-                    <p class="card-text">Full Stack software developer</p>
+                        CS4550 Web Dev</a>
+                    <p class="card-text">Web Development</p>
                     <a html="#" class="btn btn-primary"> Go </a>
                   </div>
                 </div>
@@ -166,8 +269,8 @@
                   <div class="card-body">
                     <a class="card-title" href="/Kanbas/Courses/Home/screen.html"
                         style="text-decoration: none; color: navy; font-weight: bold">
-                        CS1234 React JS</a>
-                    <p class="card-text">Full Stack software developer</p>
+                        CS4550 Web Dev</a>
+                    <p class="card-text">Web Development</p>
                     <a html="#" class="btn btn-primary"> Go </a>
                   </div>
                 </div>
@@ -178,8 +281,8 @@
                   <div class="card-body">
                     <a class="card-title" href="/Kanbas/Courses/Home/screen.html"
                         style="text-decoration: none; color: navy; font-weight: bold">
-                        CS1234 React JS</a>
-                    <p class="card-text">Full Stack software developer</p>
+                        CS4550 Web Dev</a>
+                    <p class="card-text">Web Development</p>
                     <a html="#" class="btn btn-primary"> Go </a>
                   </div>
                 </div>
@@ -190,8 +293,8 @@
                   <div class="card-body">
                     <a class="card-title" href="/Kanbas/Courses/Home/screen.html"
                         style="text-decoration: none; color: navy; font-weight: bold">
-                        CS1234 React JS</a>
-                    <p class="card-text">Full Stack software developer</p>
+                        CS4550 Web Dev</a>
+                    <p class="card-text">Web Development</p>
                     <a html="#" class="btn btn-primary"> Go </a>
                   </div>
                 </div>
@@ -202,8 +305,8 @@
                   <div class="card-body">
                     <a class="card-title" href="/Kanbas/Courses/Home/screen.html"
                         style="text-decoration: none; color: navy; font-weight: bold">
-                        CS1234 React JS</a>
-                    <p class="card-text">Full Stack software developer</p>
+                        CS4550 Web Dev</a>
+                    <p class="card-text">Web Development</p>
                     <a html="#" class="btn btn-primary"> Go </a>
                   </div>
                 </div>
@@ -214,8 +317,8 @@
                   <div class="card-body">
                     <a class="card-title" href="/Kanbas/Courses/Home/screen.html"
                         style="text-decoration: none; color: navy; font-weight: bold">
-                        CS1234 React JS</a>
-                    <p class="card-text">Full Stack software developer</p>
+                        CS4550 Web Dev</a>
+                    <p class="card-text">Web Development</p>
                     <a html="#" class="btn btn-primary"> Go </a>
                   </div>
                 </div>
