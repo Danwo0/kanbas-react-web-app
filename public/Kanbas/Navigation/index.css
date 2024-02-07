@@ -49,19 +49,19 @@
 }
 
 .wd-kanbas-navigation-bar-sm > .wd-kanbas-navigation-sm-header > a {
-  color: red;
+  color: #D30000;
   text-decoration: none;
   font-size: 2.5rem;
   font-weight: bold;
 }
 
 .wd-kanbas-navigation-sm a {
-  color: red;
+  color: #D30000;
   text-decoration: none;
 }
 
 .wd-kanbas-navigation a i {
-  color: red;
+  color: #D30000;
   font-size: 2em;
   margin-bottom: 5px;
 }
@@ -77,7 +77,7 @@
 }
 
 .wd-kanbas-navigation-sm a .wd-kanbas-image-wrapper i {
-  color: red;
+  color: #D30000;
   font-size: 2em;
   display: block;
   margin: auto;

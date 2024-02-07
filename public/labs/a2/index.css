@@ -3,7 +3,7 @@
  color: white;
 }*/
 p#id-selector-1 {
-  background-color: red;
+  background-color: #D30000;
   color: white;
 }
 p#id-selector-2 {
@@ -16,7 +16,7 @@ p#id-selector-2 {
 }
 /* apply this style iff wd-selector3 is the descendant of wd-selector1 */
 .wd-selector-1 .wd-selector-3 {
-  background-color: red;
+  background-color: #D30000;
   color: white;
 }
 /* apply this style iff wd-selector-4 is the child of this specific relationship */

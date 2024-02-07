@@ -87,7 +87,7 @@
 .calendar-list-item .calendar-list-item-content a,
 .todo-list-item .todo-list-item-content a {
     text-decoration: none;
-    color: red;
+    color: #D30000;
 }
 
 .calendar-list-item .calendar-list-item-content a:hover,
