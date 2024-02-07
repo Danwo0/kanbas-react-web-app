@@ -53,7 +53,7 @@
   text-decoration: none;
 }
 
-.wd-courses-navigation-sm a .wd-courses-image-wrapper {
+.wd-courses-navigation-sm a .wd-courses-nav-image-wrapper {
   width: 20px;
   height: 20px;
   margin-bottom: 2px;
@@ -63,7 +63,7 @@
   align-items: center;
 }
 
-.wd-courses-navigation-sm a .wd-courses-image-wrapper i {
+.wd-courses-navigation-sm a .wd-courses-nav-image-wrapper i {
   color: red;
   display: block;
   margin: auto;
@@ -74,8 +74,7 @@
   margin-right: 24px;
   padding-top: 12px;
   padding-bottom: 12px;
-  border-bottom: 1px;
-  border-bottom-style: solid;
+  border-bottom: 1px solid lightgray;
 }
 
 .wd-courses-navigation-navbar .navbar {

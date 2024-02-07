@@ -1,34 +1,66 @@
-.wd-modules,
-.wd-modules * {
-  border-radius: 0%;
-  border: none;
-  margin: 0px;
-  padding: 0px;
+.wd-modules-main-header .module-dropdown,
+.wd-modules-main-header button {
+    margin-left: 5px;
+    background-color: lightgray;
+    color: black;
+    border: 1px solid black;
 }
 
-.wd-modules {
-  margin: 5px;
+.wd-modules-main-header .active{
+    background-color: #D30000;
+    color: white;
 }
 
-.wd-modules > li {
-  background-color: lightgray;
-  border: 1px solid gray !important;
-  border-left: none !important;
+
+.module-group {
+    padding: 9px;
+    margin-top: 15px;
 }
 
-.wd-modules > li > div {
-  padding: 6px;
-  border-left: 1px solid gray !important;
+.module-group > .module-group-title {
+    background-color: #e4e4e4;
+    padding: 6px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: 1px solid lightgray;
 }
 
-.wd-modules > li > ul > li {
-  padding: 5px;
-  border-top: 1px solid gray !important;
-  border-left: 4px solid green;
+.module-group > .module-header {
+    padding: 6px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-top: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    border-left: 4px solid green
 }
 
-.wd-modules > li {
-  margin-bottom: 20px;
+.module-group > .module-items {
+    padding: 0px;
+    margin: 0px;
+    border-bottom: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    border-left: 4px solid green;
+}
+
+.module-group > .module-items > .module-item {
+    padding: 5px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    list-style-type: none;
+    border-top: 1px solid lightgray;
+}
+.module-header > .module-header-text {
+    display: inline;
+    font-size: 1rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+.module-end-btn {
+    text-decoration: none;
+    color: black;
+    padding-right: 12px;
 }
 
 .wd-modules-main {
@@ -48,70 +80,4 @@
 
 .wd-modules-main-header > .module-dropdown {
     width: auto;
-}
-
-.wd-modules-sidebar {
-    padding-right: 24px;
-}
-
-.wd-modules-sidebar-button {
-    width: 240px;
-    text-align: left;
-}
-
-.wd-modules-sidebar > ul,
-.wd-modules-sidebar-calendar > ul {
-    padding: 5px;
-}
-
-.wd-modules-sidebar h2 {
-    font-size: 1.5rem;
-    margin-bottom: 4px;
-}
-
-.wd-modules-sidebar hr {
-    margin-top: 4px;
-    margin-bottom: 4px;
-}
-
-.wd-modules-publish-buttons,
-.wd-modules-sidebar-buttons {
-    padding: 5px;
-    margin-bottom: 5px;
-}
-
-.wd-modules-publish-buttons > li,
-.wd-modules-sidebar-buttons > li {
-    margin-bottom: 5px;
-}
-
-.wd-modules-publish-button,
-.wd-modules-sidebar-button {
-    background-color: lightgray;
-    border: 1px solid gray;
-}
-
-.wd-modules-publish-button {
-    width: 120px;
-    padding: 0px;
-}
-
-.publish-active {
-    background-color: #5DBB63;
-}
-
-.wd-modules-sidebar-calendar-title {
-    display: flex;
-}
-
-.wd-modules-sidebar-calendar-title > h2 {
-    flex-grow: 1;
-}
-
-p {
-    font-size: 0.8rem;
-}
-
-.individual-item {
-    padding-top: 5px;
 }
