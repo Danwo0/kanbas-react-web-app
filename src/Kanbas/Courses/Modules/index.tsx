@@ -1,8 +1,10 @@
+import ModuleHeader from "./Header";
 import ModuleList from "./List";
+import "./index.css";
 function Modules() {
   return (
-    <div>
-      <h2>Modules</h2>
+    <div className="wd-modules-main flex-fill">
+      <ModuleHeader />
       <ModuleList />
     </div>
   );

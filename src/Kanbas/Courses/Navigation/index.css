@@ -1,0 +1,122 @@
+.wd-courses-navigation-bar {
+  background-color: white;
+  width: 150px;
+  padding-top: 20px;
+}
+
+.wd-courses-navigation {
+    background-color: white;
+    list-style: none;
+    padding: 0px;
+    width: 150;
+    margin: 0px;
+    margin-left: 20px;
+}
+
+.wd-courses-navigation-sm {
+  background-color: white;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.wd-courses-navigation li {
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.wd-courses-navigation-sm li {
+  padding-left: 0px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.wd-courses-navigation li.wd-active {
+  border-left: 2px solid black;
+}
+
+.wd-courses-navigation-sm li.wd-active {
+  font-weight: bold;
+}
+
+.wd-courses-navigation li.wd-active a {
+  color: black;
+}
+
+.wd-courses-navigation a {
+  color: #D30000;
+  text-decoration: none;
+}
+
+.wd-courses-navigation-sm a {
+  color: #D30000;
+  text-decoration: none;
+}
+
+.wd-courses-navigation-sm svg {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 2px;
+  margin-right: 4px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #D30000;
+}
+
+.wd-courses-navigation-navbar {
+  margin-left: 24px;
+  margin-right: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid lightgray;
+}
+
+.wd-courses-navigation-navbar .navbar {
+  justify-content: normal;
+}
+
+.wd-courses-navigation-navbar > .navbar > .navbar-toggler svg {
+  color: #D30000;
+}
+
+.wd-courses-navigation-navbar h4 {
+  padding-left: 20px;
+  margin: 0px;
+  color: #D30000;
+}
+
+.wd-courses-navigation-navbar > .navbar > svg {
+  padding-top: 4px;
+  padding-left: 10px;
+  font-size: 10px;
+  color: gray;
+}
+
+.wd-courses-navigation-navbar p {
+  padding-top: 4px;
+  padding-left: 10px;
+  margin: 0px;
+  font-size: 1rem;
+  color: black;
+}
+
+.wd-courses-navigation-navbar .navbar-toggler {
+  border: 0px;
+  box-shadow: none;
+}
+
+.collapsing {
+  -webkit-transition: none;
+  transition: none;
+  display: none;
+}
+
+.d-block:not(.show) {
+  display: none !important;
+}
+
+.d-md-block:not(.show) {
+  display: none !important;
+}

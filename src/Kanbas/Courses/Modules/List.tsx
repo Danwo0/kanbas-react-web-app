@@ -8,14 +8,13 @@ function ModuleList() {
   const modulesList = modules.filter((module) => module.course === courseId);
   const [selectedModule, setSelectedModule] = useState(modulesList[0]);
   return (
-    <>
-      {/* <!-- Add buttons here --> */}
-      <ul className="list-group wd-modules">
+    <div className="wrapper">
+      <div className="wd-modules-main-body">
         {modulesList.map((module) => (
-          <li
-            className="list-group-item"
+          <div
+            className="module-group"
             onClick={() => setSelectedModule(module)}>
-            <div>
+            <div className="module-group-title">
               <FaEllipsisV className="me-2" />
               {module.name}
               <span className="float-end">
@@ -25,9 +24,9 @@ function ModuleList() {
               </span>
             </div>
             {selectedModule._id === module._id && (
-              <ul className="list-group">
+              <ul className="module-items">
                 {module.lessons?.map((lesson) => (
-                  <li className="list-group-item">
+                  <li className="module-item">
                     <FaEllipsisV className="me-2" />
                     {lesson.name}
                     <span className="float-end">
@@ -38,10 +37,10 @@ function ModuleList() {
                 ))}
               </ul>
             )}
-          </li>
+          </div>
         ))}
-      </ul>
-    </>
+      </div>
+    </div>
   );
 }
 export default ModuleList;

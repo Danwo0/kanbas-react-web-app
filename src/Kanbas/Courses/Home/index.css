@@ -1,0 +1,115 @@
+.wd-courses-home-sidebar {
+    padding-top: 24px;
+    padding-right: 24px;
+    width: 275px;
+}
+
+.wd-courses-home-sidebar-button {
+    width: 240px;
+    text-align: left;
+}
+
+.wd-courses-home-sidebar > ul,
+.wd-courses-home-sidebar-calendar > ul {
+    padding: 5px;
+}
+
+.wd-courses-home-sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 4px;
+}
+
+.wd-courses-home-sidebar hr {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.wd-modules-publish-buttons,
+.wd-courses-home-sidebar-buttons {
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.wd-modules-publish-buttons > li,
+.wd-courses-home-sidebar-buttons > li {
+    margin-bottom: 2px;
+}
+
+.wd-modules-publish-buttons svg {
+    margin-right: 6px;
+    margin-bottom: 4px;
+}
+
+.wd-courses-home-sidebar-buttons .wd-sidebar-button-image-wrapper {
+    display: inline-block;
+    margin-right: 4px;
+    height: 20px;
+    width: 20px;
+}
+
+.wd-sidebar-button-image-wrapper svg {
+    padding-bottom: 2px;
+}
+
+.wd-modules-publish-button,
+.wd-courses-home-sidebar-button {
+    color: black;
+    border-radius: 3px;
+    background-color: lightgray;
+    border: 1px solid gray;
+}
+
+.wd-modules-publish-button {
+    width: 120px;
+    height: 32px;
+    padding: 0px;
+}
+
+.publish-active {
+    background-color: #5DBB63;
+    color: white;
+}
+
+.wd-courses-home-sidebar-calendar .calendar-list,
+.wd-courses-home-sidebar-todo .todo-list {
+    padding: 0px;
+}
+
+.calendar-list .calendar-list-item svg,
+.wd-courses-home-sidebar-todo .todo-list .todo-list-item svg {
+    float: left;
+    padding: 2px;
+    padding-right: 8px;
+    font-size: 24px;
+}
+
+.calendar-list .calendar-list-item .calendar-list-item-content,
+.wd-courses-home-sidebar-todo .todo-list .todo-list-item .todo-list-item-content {
+    display: inline-block;
+    width: 225px;
+}
+
+.calendar-list-item .calendar-list-item-content a,
+.todo-list-item .todo-list-item-content a {
+    text-decoration: none;
+    color: #D30000;
+}
+
+.calendar-list-item .calendar-list-item-content a:hover,
+.todo-list-item .todo-list-item-content a:hover {
+    text-decoration: underline;
+}
+
+.wd-courses-home-sidebar-calendar-title {
+    display: flex;
+}
+
+.wd-courses-home-sidebar-calendar-title > h2 {
+    flex-grow: 1;
+}
+
+.wd-courses-home-sidebar p {
+    font-size: 0.8rem;
+    margin: 0px;
+}
+
