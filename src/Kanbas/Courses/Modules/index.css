@@ -1,7 +1,7 @@
 .wd-modules-main-header .module-dropdown,
 .wd-modules-main-header button {
     margin-left: 5px;
-    background-color: lightgray;
+    background-color: #ececec;
     color: black;
     border: 1px solid black;
 }
@@ -21,7 +21,7 @@
 }
 
 .module-group > .module-group-title {
-    background-color: #e4e4e4;
+    background-color: #f4f4f4;
     padding: 6px;
     padding-top: 12px;
     padding-bottom: 12px;
