@@ -11,6 +11,10 @@
     color: white;
 }
 
+.wd-modules-main-header button svg {
+    margin-bottom: 4px;
+}
+
 .module-group {
     padding: 9px;
     margin-top: 15px;

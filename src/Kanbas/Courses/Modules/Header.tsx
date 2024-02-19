@@ -1,4 +1,4 @@
-import { FaEllipsisV } from "react-icons/fa";
+import { FaEllipsisV, FaPlus } from "react-icons/fa";
 import "./index.css";
 
 function ModuleHeader() {
@@ -15,7 +15,7 @@ function ModuleHeader() {
         <option value="NONE">Unpublish All</option>
       </select>
       <button type="button" className="btn btn-outline-secondary active">
-        <i className="fa fa-plus"></i> Module
+        <FaPlus /> Module
       </button>
       <button type="button" className="btn btn-outline-secondary">
         <FaEllipsisV />
