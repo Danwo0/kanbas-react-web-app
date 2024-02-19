@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { courses } from "../Database";
 import "./index.css";
@@ -8,7 +8,9 @@ function Dashboard({
 }: {
   setTitle: React.Dispatch<React.SetStateAction<string>>;
 }) {
-  setTitle("");
+  useEffect(() => {
+    setTitle("");
+  }, [])
   return (
     <div className="wd-kanbas-dashboard-main">
       <h1>Dashboard</h1>

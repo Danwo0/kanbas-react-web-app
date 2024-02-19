@@ -1,8 +1,13 @@
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import "./index.css";
 import { FaCalendar } from "react-icons/fa";
+import { calendar } from "../../Database";
 
 function HomeCalendar() {
+  const { courseId } = useParams();
+  const calendarList = calendar.filter(
+    (calendarItem) => calendarItem.course === courseId
+  );
   return (
     <div className="wd-courses-home-sidebar-calendar">
       <div className="wd-courses-home-sidebar-calendar-title">
@@ -11,33 +16,17 @@ function HomeCalendar() {
       </div>
       <hr />
       <ul className="calendar-list">
-        <li className="list-group-item">
-          <div className="calendar-list-item">
-            <FaCalendar />
-            <div className="calendar-list-item-content">
-              <Link to="">Lecture CS4590 12631.202410</Link>
-              <p>Sep 7 at 11:45am</p>
+        {calendarList.map((calendarItem) => (
+          <li className="list-group-item">
+            <div className="calendar-list-item">
+              <FaCalendar />
+              <div className="calendar-list-item-content">
+                <Link to="">{calendarItem.title}</Link>
+                <p>{(new Date(calendarItem.dueDate)).toLocaleString()}</p>
+              </div>
             </div>
-          </div>
-        </li>
-        <li className="list-group-item">
-          <div className="calendar-list-item">
-            <FaCalendar />
-            <div className="calendar-list-item-content">
-              <Link to="">Lecture CS4590 12631.202410</Link>
-              <p>Sep 11 at 11:45am</p>
-            </div>
-          </div>
-        </li>
-        <li className="list-group-item">
-          <div className="calendar-list-item">
-            <FaCalendar />
-            <div className="calendar-list-item-content">
-              <Link to="">CS5610 06 SP23 Lecture</Link>
-              <p>Sep 11 at 06:00pm</p>
-            </div>
-          </div>
-        </li>
+          </li>
+        ))}
       </ul>
     </div>
   );
