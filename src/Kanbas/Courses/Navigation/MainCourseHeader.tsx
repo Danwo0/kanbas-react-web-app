@@ -1,6 +1,6 @@
 import { FaGreaterThan } from "react-icons/fa";
 import { HiMiniBars3 } from "react-icons/hi2";
-
+import { assignments } from "../../Database";
 function MainCourseHeader({
   pathname,
   courseName,
@@ -8,6 +8,13 @@ function MainCourseHeader({
   pathname: string;
   courseName: string;
 }) {
+  let pageTitle = pathname.split('/').pop();
+
+  if (pathname.includes("Assignments") && pageTitle !== "Assignments") {
+    const assignment = assignments.find((a) => a._id === pageTitle);
+    pageTitle = assignment?.title;
+  }
+
   return (
     <div className="wd-courses-navigation-navbar pos-f-t d-none d-md-block show">
       <nav className="navbar">
@@ -23,7 +30,7 @@ function MainCourseHeader({
         </button>
         <h4>{courseName}</h4>
         <FaGreaterThan />
-        <p>{pathname.split('/').pop()}</p>
+        <p>{pageTitle}</p>
       </nav>
     </div>
   );
