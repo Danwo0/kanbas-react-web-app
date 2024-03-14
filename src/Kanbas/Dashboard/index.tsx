@@ -1,6 +1,4 @@
-import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { courseList } from "../Database";
 import "./index.css";
 
 function Dashboard({
@@ -15,17 +13,61 @@ function Dashboard({
   return (
     <div className="wd-kanbas-dashboard-main">
       <h1>Dashboard</h1>
-      <h5>Course</h5>
-      <input value={course.name} className="form-control"
-             onChange={(e) => setCourse({ ...course, name: e.target.value }) } />
-      <input value={course.number} className="form-control"
-             onChange={(e) => setCourse({ ...course, number: e.target.value }) } />
-      <input value={course.startDate} className="form-control" type="date"
-             onChange={(e) => setCourse({ ...course, startDate: e.target.value }) }/>
-      <input value={course.endDate} className="form-control" type="date"
-             onChange={(e) => setCourse({ ...course, endDate: e.target.value }) } />
-      <button onClick={addNewCourse} className="btn">Add</button>
-      <button onClick={updateCourse} className="btn">Update</button>
+      <h5>Add/Update Course</h5>
+      <div className="d-flex dashboard-edit-courses-form">
+        <div className="flex-grow-1 dashboard-edit-courses-inputs">
+          <span className="d-flex dashboard-edit-courses-input-row">
+            <label htmlFor="courseName" className="col-form-label dashboard-edit-courses-label">Course Name</label>
+            <input value={course.name} 
+                  className="form-control dashboard-edit-courses-input-string"
+                  placeholder="Course name"
+                  title="Name of the course"
+                  id="courseName"
+                  onChange={(e) => setCourse({ ...course, name: e.target.value }) } />
+          </span>
+          <span className="d-flex dashboard-edit-courses-input-row">
+            <label htmlFor="courseDescription" className="col-form-label dashboard-edit-courses-label">Course Description</label>
+            <input value={course.number} 
+                  className="form-control dashboard-edit-courses-input-string"
+                  placeholder="Course description"
+                  title="Course description"
+                  id="courseDescription"
+                  onChange={(e) => setCourse({ ...course, number: e.target.value }) } />
+          </span>
+          <span className="d-flex dashboard-edit-courses-input-row">
+            <label htmlFor="courseStartDate" className="col-form-label dashboard-edit-courses-label">Start Date</label>
+            <input value={course.startDate} 
+                  className="form-control" 
+                  type="date"
+                  title="Course start date"
+                  id="courseStartDate"
+                  onChange={(e) => setCourse({ ...course, startDate: e.target.value }) }/>
+          </span>
+          <span className="d-flex dashboard-edit-courses-input-row">
+            <label htmlFor="courseEndDate" className="col-form-label dashboard-edit-courses-label">End Date</label>
+            <input value={course.endDate} 
+                  className="form-control" 
+                  type="date"
+                  title="Course end date"
+                  id="courseEndDate"
+                  onChange={(e) => setCourse({ ...course, endDate: e.target.value }) } />
+            </span> 
+        </div>
+        <div className="dashboard-edit-courses-buttons">
+          <button 
+            onClick={addNewCourse} 
+            className="btn btn-success d-block show"
+          >
+            Add
+          </button>
+          <button 
+            onClick={updateCourse}
+            className="btn btn-secondary d-block show"
+          >
+            Update
+          </button>
+        </div>
+      </div>
       <hr />
       <h2>Published Courses ({courses.length})</h2> <hr />
       <div className="row">
@@ -52,13 +94,17 @@ function Dashboard({
                     <button onClick={(event) => {
                         event.preventDefault();
                         setCourse(course);
-                      }}>
+                      }}
+                      className="btn btn-secondary"
+                    >
                       Edit
                     </button>
                     <button onClick={(event) => {
                         event.preventDefault();
                         deleteCourse(course._id);
-                      }}>
+                      }}
+                      className="btn btn-danger"
+                    >
                       Delete
                     </button>
                   </Link>

@@ -1,3 +1,25 @@
 .wd-kanbas-dashboard-main {
     padding: 24px;
 }
+
+.wd-kanbas-dashboard-main .dashboard-edit-courses-label {
+    font-size: 0.9rem;
+    white-space:nowrap;
+    width: 160px;
+}
+
+.wd-kanbas-dashboard-main.dashboard-edit-courses-input-string {
+    display: inline;
+    width: auto;
+    flex-grow: 1;
+}
+
+.wd-kanbas-dashboard-main .dashboard-edit-courses-buttons button {
+    width: 5rem;
+}
+
+.wd-kanbas-dashboard-main .card button {
+    --bs-btn-padding-x: 0.5rem;
+    --bs-btn-padding-y: 0.3rem;
+    --bs-btn-font-size: 0.8rem;
+}
