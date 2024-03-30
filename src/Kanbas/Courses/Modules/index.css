@@ -20,6 +20,22 @@
     margin-top: 15px;
 }
 
+.wd-modules-main-body .modules-edit-label {
+    font-size: 0.9rem;
+    white-space:nowrap;
+    width: 160px;
+}
+
+.wd-modules-main-body.modules-edit-input-string {
+    display: inline;
+    width: auto;
+    flex-grow: 1;
+}
+
+.wd-modules-main-body .modules-edit-buttons button {
+    width: 5rem;
+}
+
 .module-group > .module-group-title {
     background-color: #f4f4f4;
     padding: 6px;
@@ -28,6 +44,11 @@
     border: 1px solid lightgray;
 }
 
+.wd-modules-main-body .module-group button {
+    --bs-btn-padding-x: 0.5rem;
+    --bs-btn-padding-y: 0.3rem;
+    --bs-btn-font-size: 0.8rem;
+}
 .module-group > .module-header {
     padding: 6px;
     padding-top: 12px;
