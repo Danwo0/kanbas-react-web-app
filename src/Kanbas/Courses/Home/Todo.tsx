@@ -13,7 +13,7 @@ function HomeTodo() {
       <hr />
       <ul className="todo-list">
         {todoList.map((todo) => (
-          <li className="list-group-item">
+          <li key={todo._id} className="list-group-item">
             <div className="todo-list-item">
               <FaFileAlt />
               <div className="todo-list-item-content">

@@ -17,7 +17,7 @@ function HomeCalendar() {
       <hr />
       <ul className="calendar-list">
         {calendarList.map((calendarItem) => (
-          <li className="list-group-item">
+          <li key={calendarItem._id} className="list-group-item">
             <div className="calendar-list-item">
               <FaCalendar />
               <div className="calendar-list-item-content">

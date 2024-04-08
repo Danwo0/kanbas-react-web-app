@@ -1,7 +1,12 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
+const API_BASE = process.env.REACT_APP_API_BASE;
+
 function WorkingWithArrays() {
+  
+  const API = `${API_BASE}/a5/todos`;
+
   const [todo, setTodo] = useState({
     id: 1,
     title: "NodeJS Assignment",
@@ -21,6 +26,7 @@ function WorkingWithArrays() {
   const postTodo = async () => {
     const response = await axios.post(API, todo);
     setTodos([...todos, response.data]);
+    setTodo(response.data);
   };
   const fetchTodos = async () => {
     const response = await axios.get(API);
@@ -36,7 +42,7 @@ function WorkingWithArrays() {
     setTodo(response.data);
   };
   const updateTodo = async () => {
-    const response = await axios.put(`${API}/${todo.id}`, todo);
+    const response = await axios.put(`${API}/${todo.id}`, todo).catch(() => {});
     setTodos(todos.map((t) => (t.id === todo.id ? todo : t)));
   };
 
@@ -44,7 +50,6 @@ function WorkingWithArrays() {
     fetchTodos();
   }, []);
 
-  const API = "http://localhost:4000/a5/todos";
   return (
     <div>
       <h3>Working with Arrays</h3>
