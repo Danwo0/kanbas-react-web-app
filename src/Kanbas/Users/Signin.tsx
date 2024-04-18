@@ -11,14 +11,20 @@ export default function Signin() {
     await client.signin(credentials);
     navigate("/Kanbas/Account/Profile");
   };
+  const signup = () => {
+    navigate("/Kanbas/Account/Signup");
+  }
   return (
     <div>
       <h1>Signin</h1>
-      <input value={credentials.username} onChange={(e) =>
+      <label htmlFor="signin-username" className="form-label">Username</label>
+      <input className="form-control" id="signin-username" value={credentials.username} onChange={(e) =>
         setCredentials({ ...credentials, username: e.target.value })}/>
-      <input value={credentials.password} onChange={(e) =>
+      <label htmlFor="signin-password" className="form-label">Password</label>
+      <input type="password" className="form-control" id="signin-password" value={credentials.password} onChange={(e) =>
         setCredentials({ ...credentials, password: e.target.value })}/>
-      <button onClick={signin}> Signin </button>
+      <button type="submit" className="btn btn-primary" onClick={signin}> Signin </button>
+      <button type="submit" className="btn btn-secondary" onClick={signup}> Signup </button>
     </div>
   );
 }

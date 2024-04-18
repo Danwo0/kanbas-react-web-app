@@ -18,6 +18,12 @@ export default function UserTable() {
     role: "USER",
   });
   const [role, setRole] = useState("USER");
+  const [showPassword, setShowPassword] = useState(false);
+
+  const toggleShowPassword = () => {
+    setShowPassword(!showPassword);
+  }
+
   const fetchUsers = async () => {
     const users = await client.findAllUsers();
     setUsers(users);
@@ -65,6 +71,9 @@ export default function UserTable() {
   }, []);
   return (
     <div>
+      <button className="btn btn-secondary float-end" onClick={toggleShowPassword}>
+        {showPassword ? 'Hide Password' : 'Show Password'}
+      </button>
       <select
         onChange={(e) => fetchUsersByRole(e.target.value)}
         value={role || "USER"}
@@ -81,16 +90,19 @@ export default function UserTable() {
           <tr>
             <td>
               <input
-                value={user.password}
-                onChange={(e) => setUser({ ...user, password: e.target.value })}
-              />
-              <input
+                placeholder="Username"
                 value={user.username}
                 onChange={(e) => setUser({ ...user, username: e.target.value })}
+              />
+              <input
+                placeholder="Password"
+                value={user.password}
+                onChange={(e) => setUser({ ...user, password: e.target.value })}
               />
             </td>
             <td>
               <input
+                placeholder="First Name"
                 value={user.firstName}
                 onChange={(e) =>
                   setUser({ ...user, firstName: e.target.value })
@@ -99,6 +111,7 @@ export default function UserTable() {
             </td>
             <td>
               <input
+                placeholder="Last Name"
                 value={user.lastName}
                 onChange={(e) => setUser({ ...user, lastName: e.target.value })}
               />
@@ -127,7 +140,7 @@ export default function UserTable() {
         <tbody>
           {users.map((user: any) => (
             <tr key={user._id}>
-              <td>{user.username}</td>
+              {showPassword ? <td>{user.username}:{user.password}</td> : <td>{user.username}</td>}
               <td>{user.firstName}</td>
               <td>{user.lastName}</td>
               <td>{user.role}</td>

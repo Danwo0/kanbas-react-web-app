@@ -34,40 +34,61 @@ export default function Profile() {
       </Link>
       {profile && (
         <div>
+          <label htmlFor="profile-username" className="form-label">Username</label>
           <input
+            id="profile-username"
+            className="form-control"
             value={profile.username}
             onChange={(e) =>
               setProfile({ ...profile, username: e.target.value })
             }
           />
+          <label htmlFor="profile-password" className="form-label">Password</label>
           <input
+            id="profile-password"
+            className="form-control"
             value={profile.password}
             onChange={(e) =>
               setProfile({ ...profile, password: e.target.value })
             }
           />
+          <label htmlFor="profile-fname" className="form-label">First name</label>
           <input
+            id="profile-fname"
+            className="form-control"
             value={profile.firstName}
             onChange={(e) =>
               setProfile({ ...profile, firstName: e.target.value })
             }
           />
+          <label htmlFor="profile-lname" className="form-label">Last name</label>
           <input
+            id="profile-lname"
+            className="form-control"
             value={profile.lastName}
             onChange={(e) =>
               setProfile({ ...profile, lastName: e.target.value })
             }
           />
+          <label htmlFor="profile-dob" className="form-label">Date of birth</label>
           <input
+            id="profile-dob"
+            className="form-control"
             value={profile.dob}
             type="date"
             onChange={(e) => setProfile({ ...profile, dob: e.target.value })}
           />
+          <label htmlFor="profile-email" className="form-label">Email</label>
           <input
+            id="profile-email"
+            className="form-control"
             value={profile.email}
             onChange={(e) => setProfile({ ...profile, email: e.target.value })}
           />
+          <label htmlFor="profile-role" className="form-label">Role</label>
           <select
+            id="profile-role"
+            className="form-select"
             onChange={(e) => setProfile({ ...profile, role: e.target.value })}
           >
             <option value="USER">User</option>
@@ -77,8 +98,8 @@ export default function Profile() {
           </select>
         </div>
       )}
-      <button onClick={save}>Save</button>
-      <button onClick={signout}>Signout</button>
+      <button className="btn btn-primary" onClick={save}>Save</button>
+      <button className="btn btn-danger" onClick={signout}>Signout</button>
     </div>
   );
 }
